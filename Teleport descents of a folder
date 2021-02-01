@@ -1,0 +1,3 @@
+for i, v in pairs(game.Workspace.*path*:GetChildren()) do
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+end
