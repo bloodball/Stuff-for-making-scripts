@@ -1,0 +1,16 @@
+local Mouse = game:GetService("Players").LocalPlayer:GetMouse()
+local Toggled = false
+local Keybind = "ButtonR1"
+
+Mouse.KeyDown:Connect(function(Key)
+    if Key == Keybind then
+        if Toggled then
+            Toggled = false
+        else
+            Toggled = true
+            while Toggled and wait() do
+                print("How?")
+            end
+        end
+    end
+end)
